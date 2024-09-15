@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentorship Website</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            padding-top: 56px;
+        }
+        .mentor-card {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+        .mentor-card:hover {
+            transform: scale(1.02);
+        }
+        .navbar-custom {
+            background-color: #6c757d;
+        }
+        .nav-link {
+            color: #fff !important;
+        }
+        .nav-link:hover {
+            color: #f8f9fa !important;
+        }
+        .card-title {
+            color: #343a40;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+        }
+        .btn-secondary {
+            background-color: #6c757d;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Mentorship</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#history">History</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#community">Community</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#help">Help</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#notifications">
+                            <i class="fa-solid fa-bell"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#profile">
+                            <i class="fa-solid fa-user"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Content Sections -->
+
+    <!-- Home Section -->
+    <section id="home" class="container mt-5">
+        <h2 class="mb-4">Our Mentors</h2>
+        <div class="row">
+            <!-- Mentor Cards -->
+            <!-- Repeat this block for each mentor -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card mentor-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Mentor Name</h5>
+                        <p class="card-text">Expertise: Industry or Field</p>
+                        <p class="card-text">Rating: ★★★★☆ (4.5/5)</p>
+                        <p class="card-text">Reviews: "Great mentor, very insightful!"</p>
+                        <a href="#" class="btn btn-primary">Start Session</a>
+                        <a href="#" class="btn btn-secondary">View Profile</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Repeat till 20 mentors -->
+        </div>
+    </section>
+
+    <!-- History Section -->
+    <section id="history" class="container mt-5">
+        <h2 class="mb-4">History</h2>
+        <p>View your past mentorship sessions and interactions.</p>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="container mt-5">
+        <h2 class="mb-4">Blog</h2>
+        <p>Read insightful articles and tips from industry experts.</p>
+    </section>
+
+    <!-- Community Section -->
+    <section id="community" class="container mt-5">
+        <h2 class="mb-4">Community</h2>
+        <p>Join discussions and share knowledge with peers.</p>
+    </section>
+
+    <!-- Help Section -->
+    <section id="help" class="container mt-5 mb-5">
+        <h2 class="mb-4">Help</h2>
+        <p>Get support and answers to your questions.</p>
+    </section>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
